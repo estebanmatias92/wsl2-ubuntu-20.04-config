@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~ 
-MYDOTFILES_PATH="./mydotfiles"
+MYDOTFILES_PATH="${HOME}/wsl2-ubuntu20.04-config/mydotfiles"
 
 # Update and upgrade the distro
 sudo apt update
