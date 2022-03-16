@@ -1,35 +1,60 @@
 #!/bin/bash
 
 echo ""
-echo "[-][-] Configuring Git global variables [-][-]"
+echo "----------------------------------------------"
+echo "------ Configuring Git global variables ------"
+echo "----------------------------------------------"
 echo ""
-git config --global user.name "Matias Esteban"
-git config --global user.email estebanmatias92@gmail.com
+read -p "Type your github user.name: " $mygitusername
+read -p "Type your github user.email: " $mygituseremail
+git config --global user.name $mygitusername
+git config --global user.email $mygituseremail
 git config --global init.defaultBranch main
+# Show the config
+git config --list --show-origin
+sleep 2
+
 
 # Auth Login with Github CLI and set up the SSH credentials for Git
 echo ""
-echo "[-][-] Adding ssh key [-][-]"
+echo "----------------------------"
+echo "------ Adding ssh key ------"
+echo "----------------------------"
 echo ""
-ssh-keygen -t ed25519 -C "estebanmatias92@gmail.com"
+ssh-keygen -t ed25519 -C $mygituseremail
+sleep 1
+
 
 echo ""
-echo "[-][-] Starting the SSH-AGENT [-][-]"
+echo "------------------------------------"
+echo "------ Starting the SSH-AGENT ------"
+echo "------------------------------------"
 echo ""
 eval "$(ssh-agent -s)"
+sleep 1
+
 
 echo ""
-echo "[-][-] Adding private ssh key to the SSH-AGENT [-][-]"
+echo "-----------------------------------------------------"
+echo "------ Adding private ssh key to the SSH-AGENT ------"
+echo "-----------------------------------------------------"
 echo ""
 ssh-add ~/.ssh/id_ed25519
+sleep 1
+
 
 echo ""
-echo "[-][-] Adding public ssh key to GITHUB [-][-]"
+echo "---------------------------------------------"
+echo "------ Adding public ssh key to GITHUB ------"
+echo "---------------------------------------------"
 echo ""
 gh ssh-key add ~/.ssh/id_ed25519.pub --title "$(lsb_release -ds)"
+sleep 1
 
 # Not needed with the above line
 #echo ""
-#echo "[-][-] Authenticate and Login on my Github Account [-][-]"
+#echo "---------------------------------------------------------"
+#echo "------ Authenticate and Login on my Github Account ------"
+#echo "---------------------------------------------------------"
 #echo ""
 #gh auth login
