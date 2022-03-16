@@ -12,7 +12,7 @@ This script will do the next:
 * Install Oh-My-Zsh
 * Copy custom dotfiles
 * Install VS Code Server
-* Opens .zshrc at the end
+* Open .zshrc at the end
 
 ## Prerequisites
 
