@@ -6,10 +6,11 @@ This script will do the next:
 * Install/Update Curl
 * Install/Update Git
 * Install Github CLI
-* Configure Git SSH credentials
-* Configure Github SSH credentials
+* Configure local Git SSH credentials
+* Login to Github and configure public SSH credentials
 * Install Zsh
 * Install Oh-My-Zsh
+* Install zsh-users/zsh-syntax-highlighting
 * Copy custom dotfiles
 * Install VS Code Server
 * Open .zshrc at the end
