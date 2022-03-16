@@ -26,7 +26,7 @@ echo "=============================================="
 echo "====== Installing/Updating dependencies ======"
 echo "=============================================="
 echo ""
-chmod +x ${MYSETUP_SCRIPT_PATH}/libraries.sh && ${MYSETUP_SCRIPT_PATH}/libraries.sh
+chmod +x "${MYSETUP_SCRIPT_PATH}/libraries.sh" && "${MYSETUP_SCRIPT_PATH}/libraries.sh"
 sleep 2
 
 # Install Git Credential Manager (Avoid this, make the VM huge)
@@ -57,7 +57,7 @@ echo "===================================================================="
 echo "====== Configuring SSH credentials and Github SSH credentials ======"
 echo "===================================================================="
 echo ""
-chmod +x ${MYSETUP_SCRIPT_PATH}/gitconfig.sh && ${MYSETUP_SCRIPT_PATH}/gitconfig.sh
+chmod +x "${MYSETUP_SCRIPT_PATH}/gitconfig.sh" && "${MYSETUP_SCRIPT_PATH}/gitconfig.sh"
 sleep 2
 
 # Install FISH
@@ -77,7 +77,7 @@ echo "=========================================="
 echo "====== Installing ZSH and Oh-My-Zsh ======"
 echo "=========================================="
 echo ""
-chmod +x ${MYSETUP_SCRIPT_PATH}/zshconfig.sh && ${MYSETUP_SCRIPT_PATH}/zshconfig.sh
+chmod +x "${MYSETUP_SCRIPT_PATH}/zshconfig.sh" && "${MYSETUP_SCRIPT_PATH}/zshconfig.sh"
 sleep 2
 
 

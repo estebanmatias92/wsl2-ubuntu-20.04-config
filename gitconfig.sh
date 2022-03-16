@@ -7,8 +7,8 @@ echo "----------------------------------------------"
 echo ""
 read -p "Enter your github user.name: " mygitusername
 read -p "Enter your github user.email: " mygituseremail
-git config --global user.name $mygitusername
-git config --global user.email $mygituseremail
+git config --global user.name "${mygitusername}"
+git config --global user.email "${mygituseremail}"
 git config --global init.defaultBranch main
 # Show the config
 git config --list --show-origin
@@ -21,7 +21,7 @@ echo "----------------------------"
 echo "------ Adding ssh key ------"
 echo "----------------------------"
 echo ""
-ssh-keygen -t ed25519 -C $mygituseremail
+ssh-keygen -t ed25519 -C "${mygituseremail}"
 sleep 1
 
 
