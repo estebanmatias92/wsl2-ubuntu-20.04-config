@@ -2,8 +2,9 @@
 
 clear
 
-MYDOTFILES_PATH="$(pwd)/mydotfiles"
-MYCONFIGPATH="$(pwd)"
+MYSCRIPT_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+MYDOTFILES_PATH="${MYSCRIPT_PATH}/mydotfiles"
+
 cd ~ 
 
 # Update and upgrade the distro
@@ -19,7 +20,7 @@ echo ""
 echo ""
 echo "[-] Installing/Updating dependencies [-]"
 echo ""
-chmod +x ${MYCONFIGPATH}/libraries.sh && ${MYCONFIGPATH}/libraries.sh
+chmod +x ${MYSCRIPT_PATH}/libraries.sh && ${MYSCRIPT_PATH}/libraries.sh
 clear
 
 # Install Git Credential Manager (Avoid this, make the VM huge)
@@ -43,7 +44,7 @@ echo ""
 echo ""
 echo "[-] Configuring SSH credentials and Github SSH credentials [-]"
 echo ""
-chmod +x ${MYCONFIGPATH}/gitconfig.sh && ${MYCONFIGPATH}/gitconfig.sh
+chmod +x ${MYSCRIPT_PATH}/gitconfig.sh && ${MYSCRIPT_PATH}/gitconfig.sh
 clear
 
 # Install FISH
@@ -55,7 +56,7 @@ echo ""
 echo ""
 echo "[-] Installing ZSH and Oh-My-Zsh [-]"
 echo ""
-chmod +x ${MYCONFIGPATH}/zshconfig.sh && ${MYCONFIGPATH}/zshconfig.sh
+chmod +x ${MYSCRIPT_PATH}/zshconfig.sh && ${MYSCRIPT_PATH}/zshconfig.sh
 
 # Autoremove unnecesary libraries
 echo ""
