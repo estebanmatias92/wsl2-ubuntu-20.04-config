@@ -99,12 +99,24 @@ echo "====== Copying config files ======"
 echo "=================================="
 echo ""
 cat -v "${MYSETUP_DOTFILES_PATH}/myTmux.config" >> ~/Tmux.config
+sleep 1
+
+
+# Now install VS Code Server and open .zshrc file
+echo ""
+echo ""
+echo "==============================================================="
+echo "====== Installing VS Code Server and opening .zshrc file ======"
+echo "==============================================================="
+echo ""
+code .zshrc
 sleep 2
 
 
 echo ""
+echo ""
 echo "================================================"
-echo "====== The setup is done, please restart. ======"
+echo "====== The setup is done, please restart the VM. ======"
 echo "================================================"
 echo ""
 echo ""

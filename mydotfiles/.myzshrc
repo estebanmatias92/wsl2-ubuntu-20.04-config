@@ -1,5 +1,4 @@
-# Set default ZSH THEME
-ZSH_THEME="fino-time"
+
 
 # Fix for TMUX - VSCODE connection
 fix_wsl2_interop() {

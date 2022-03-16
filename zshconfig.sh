@@ -30,5 +30,6 @@ echo "-----------------------------------"
 echo "------ Copying Zsh .dotfiles ------"
 echo "-----------------------------------"
 echo ""
+sed -i 's+ZSH_THEME="robbyrussell"+ZSH_THEME="agnoster"+g' ~/.zshrc
 sed -i 's+plugins=(git)+plugins=(git ssh-agent z tmux themes)+g' ~/.zshrc
 cat -v "${MYSETUP_DOTFILES_PATH}/.myzshrc" >> ~/.zshrc

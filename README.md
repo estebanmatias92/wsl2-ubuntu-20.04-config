@@ -11,6 +11,8 @@ This script will do the next:
 * Install Zsh
 * Install Oh-My-Zsh
 * Copy custom dotfiles
+* Install VS Code Server
+* Opens .zshrc at the end
 
 ## Prerequisites
 
