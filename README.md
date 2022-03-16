@@ -14,15 +14,22 @@ This script will do the next:
 
 ## Prerequisites
 
-### Clone the repository
+##### Clone the repository
 
-$ git clone https://github.com/estebanmatias92/wsl2-ubuntu-20.04-config.git
+*`$ git clone https://github.com/estebanmatias92/wsl2-ubuntu-20.04-config.git`*
 
-### Change permissions to execute run.sh script
+##### Change permissions to execute `run.sh` script
 
-$ chmod +x ./wsl2-ubuntu-20.04-config/run.sh
+*`$ chmod +x ./wsl2-ubuntu-20.04-config/run.sh`*
 
 
 ## Run the script
 
-$ ./wsl2-ubuntu-20.04-config/run.sh
+*`$ ./wsl2-ubuntu-20.04-config/run.sh`*
+
+
+#### Or run it all together
+
+*`$ git clone https://github.com/estebanmatias92/wsl2-ubuntu-20.04-config.git &&
+chmod +x ./wsl2-ubuntu-20.04-config/run.sh &&
+./wsl2-ubuntu-20.04-config/run.sh`*
