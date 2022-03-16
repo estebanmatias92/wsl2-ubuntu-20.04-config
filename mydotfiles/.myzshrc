@@ -1,6 +1,3 @@
-# Enable Plugins
-plugins= $plugins + ( ssh-agent z git tmux themes)
-
 # Set default ZSH THEME
 ZSH_THEME="fino-time"
 
