@@ -6,7 +6,7 @@ echo "------------------------------------------------------"
 echo "------ Installing Zsh and make it default Shell ------"
 echo "------------------------------------------------------"
 echo ""
-sudo apt install zsh && 
+yes | sudo apt install zsh && 
 chsh -s $(which zsh)
 sleep 1
 
@@ -31,4 +31,4 @@ echo "------ Copying Zsh .dotfiles ------"
 echo "-----------------------------------"
 echo ""
 sed -i 's+plugins=(git)+plugins=(git ssh-agent z tmux themes)+g' ~/.zshrc
-cat -v "${MYDOTFILES_PATH}/.myzshrc" >> ~/.zshrc
+cat -v "${MYSETUP_DOTFILES_PATH}/.myzshrc" >> ~/.zshrc

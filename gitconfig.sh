@@ -5,8 +5,8 @@ echo "----------------------------------------------"
 echo "------ Configuring Git global variables ------"
 echo "----------------------------------------------"
 echo ""
-read -p "Type your github user.name: " $mygitusername
-read -p "Type your github user.email: " $mygituseremail
+read -p "Enter your github user.name: " mygitusername
+read -p "Enter your github user.email: " mygituseremail
 git config --global user.name $mygitusername
 git config --global user.email $mygituseremail
 git config --global init.defaultBranch main
