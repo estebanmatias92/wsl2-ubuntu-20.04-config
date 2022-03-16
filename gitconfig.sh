@@ -11,6 +11,8 @@ git config --global user.name "${mygitusername}"
 git config --global user.email "${mygituseremail}"
 git config --global init.defaultBranch main
 # Show the config
+echo "Showing the --global config data:"
+echo ""
 git config --list --show-origin
 sleep 2
 
@@ -43,18 +45,11 @@ ssh-add ~/.ssh/id_ed25519
 sleep 1
 
 
-echo ""
-echo "---------------------------------------------"
-echo "------ Adding public ssh key to GITHUB ------"
-echo "---------------------------------------------"
-echo ""
-gh ssh-key add ~/.ssh/id_ed25519.pub --title "$(lsb_release -ds)"
-sleep 1
-
 # Not needed with the above line
-#echo ""
-#echo "---------------------------------------------------------"
-#echo "------ Authenticate and Login on my Github Account ------"
-#echo "---------------------------------------------------------"
-#echo ""
-#gh auth login
+echo ""
+echo "-------------------------------------------------------------------"
+echo "------ Authenticate, login and add public SSH Key to Github  ------"
+echo "-------------------------------------------------------------------"
+echo ""
+gh auth login
+sleep 1
