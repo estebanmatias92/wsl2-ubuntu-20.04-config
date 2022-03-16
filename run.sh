@@ -9,6 +9,7 @@ export MYSETUP_SCRIPT_PATH MYSETUP_DOTFILES_PATH
 
 cd ~ 
 
+
 # Update and upgrade the distro
 echo "==============================="
 echo "====== Update the system ======"
