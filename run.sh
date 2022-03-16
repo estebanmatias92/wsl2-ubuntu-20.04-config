@@ -113,6 +113,11 @@ code .zshrc
 sleep 2
 
 
+# Now unset my exported variables
+unset MYSETUP_SCRIPT_PATH MYSETUP_DOTFILES_PATH
+
+
+# Finish message
 echo ""
 echo ""
 echo "======================================================="
@@ -123,4 +128,5 @@ echo ""
 sleep 1
 
 
+# Start Zsh shell
 exec zsh
