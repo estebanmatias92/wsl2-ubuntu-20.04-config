@@ -15,7 +15,7 @@ This script will do the next:
 * Install VS Code Server
 * Open .zshrc at the end
 
-## Prerequisites 
+## Prerequisites
 
 ##### Clone the repository
 
