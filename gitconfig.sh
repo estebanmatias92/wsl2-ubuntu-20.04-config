@@ -11,6 +11,7 @@ git config --global user.name "${mygitusername}"
 git config --global user.email "${mygituseremail}"
 git config --global init.defaultBranch main
 # Show the config
+echo ""
 echo "Showing the --global config data:"
 echo ""
 git config --list --show-origin
